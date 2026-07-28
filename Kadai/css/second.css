@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+.gnav > ul > li {
+    text-align: center;
+    padding: 0; 
+
+    display: inline;
+
+    margin: 0 8px 0 0;
+    padding: 8px 4px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    background: linear-gradient(#FFF, #999);
+
+    font-family: "Yu Gothic Medium", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-weight: normal; 
+}
+
+body {
+    font-size: 1.15em;
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+h1 {
+    background-color: aquamarine;
+    font-size: 34pt;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+a:hover {
+    font-size: 1.5em;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    font-size: 1.75em;
+}
+
+.box {
+    border: 4px double #2e7d32; 
+    border-radius: 12px;                  
+    padding: 20px;         
+    margin: 30px auto;     
+    max-width: 350px;      
+    background-color: #f7fbf7; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.box h3 {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 5px 15px;      
+    align-self: center; 
+    font-weight: normal;
+}
+
+.box ol {
+    display: inline-block; 
+    text-align: left;      
+    padding-left: 20px;    
+    margin: 20px auto 0 auto; 
+}
+
+.box ol a {
+    color: #2e7d32;
+}
+
+h3 {
+    background-color: #1a5e3a; 
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 5px 15px;
+    display: table;
+    margin: 20px auto;
+}
+
+h2 {
+    background-color: #b26a48;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 5px 15px;
+    display: table;
+    margin: 20px auto;
+}
+
+.island {
+    color: #b26a48;
+}
+
+#oogami {
+    border: 4px double #856404;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.menu-btn {
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important; 
+    width: 40px !important;
+    height: 40px !important;
+    background: #007aff !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    padding: 8px !important;
+    box-sizing: border-box !important;
+}
+
+.menu-btn span {
+    display: block !important;
+    width: 100% !important;
+    height: 3px !important;
+    background-color: #fff !important;
+    transition: all 0.3s ease !important;
+}
+
+.gnav {
+    position: fixed !important;
+    top: 0 !important;
+    right: -300px !important;
+    left: auto !important; 
+    width: 300px !important;
+    height: 100vh !important;
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: -4px 0 12px rgba(0,0,0,0.1) !important;
+    transition: all 0.3s ease !important;
+    z-index: 9998 !important; 
+    padding-top: 80px !important;
+    display: block !important; 
+}
+
+.gnav.open ul {
+    display: block !important;
+    flex-direction: column !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.gnav.open ul li {
+    display: block !important;
+    width: auto !important;
+    float: none !important;
+    padding: 20px 30px !important;
+    color: #333 !important;
+    font-size: 1.2rem !important;
+    border-bottom: 1px solid #eee !important;
+    cursor: pointer !important;
+    text-align: left !important;
+    /* 元のグラデーション背景や枠線をリセット */
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.gnav.open ul li:hover {
+    background-color: #f0f2f5 !important;
+    color: #007aff !important;
+}
+
+.gnav.open {
+    right: 0 !important; 
+}
+
+.menu-btn.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg) !important;
+}
+.menu-btn.open span:nth-child(2) {
+    opacity: 0 !important;
+}
+.menu-btn.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg) !important;
+}
