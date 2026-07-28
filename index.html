@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osamu HASEGAWA">
+    <meta name="keywords" content="html, css, javascript">
+    <title>んみゃーち あなたも宮古島へ</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <header id="top">
+        <h1>んみゃーち あなたも宮古島へ</h1>
+
+        <p id="greeting" style="font-weight: bold; color: #2e7d32;"></p>
+
+        <button class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="gnav" id="navMenu">
+            <ul>
+             <li>ホーム</li>
+             <li>タグリファレンス</li>
+             <li>問い合わせ</li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="img/S__111919119.jpg" alt="インギャーマリンガーデン" width="900" height="500">
+
+    <main>
+
+        <section>
+
+            <h2>宮古島ってどんなところ？</h2>
+
+            <p class="Miyako-blue">宮古島は沖縄本島から約300キロ離れた島であり、3つの島と美しい海に囲まれています。</p> 
+            <p class="Miyako-blue">年中温暖な気候で、夏は海風で涼しく、冬の気温は20度前後と過ごしやすい場所です。</p>
+            <p class="Miyako-blue">そんな宮古島の魅力を、祖父母が住んでおり年に1度は訪れている私が2つの部門に分けて紹介します！</p>
+        </section>
+
+        <section>
+
+            <h2>宮古島の情報</h2>
+            <p>ここでは宮古島の情報を詳しくお伝えします！</p>
+            <img src="img/img-tourist-info-01.gif" alt="宮古島の地図" width="500" height="300">
+            <p>出典：宮古島ネット</p>
+            <p>宮古島は、</p>
+            <dl>
+                <dt>人口：約55,000人</dt>
+                 <dd>（そのうち半分は島の中心である平良地区に集中）</dd>
+                <dt>面積：約204平方キロメートル</dt>
+                 <dd>（東京23区の約1/4ほどの大きさ）</dd>
+                <dt>島：宮古島、伊良部島、池間島、来間島、下地島、大神島</dt>
+                <dd></dd> 
+            </dl>
+            <p>以上が主な構成要素となっています。</p>
+            <p>地図を見ていただくと、ピックアップされたスポットの1/3がビーチであり、いかにおすすめされているかがわかります。</p>
+            <p>今回は</p>
+            <ul>
+                <li><a href="../Kadai/alpha.html" target="_self">美しい海</a></li>
+                <li><a href="../Kadai/beta.html" target="_self">宮古島の島々</a></li>
+            </ul>
+            <p>この2つに絞って紹介します！</p>
+
+        </section>
+
+        <p><button onclick="scrollToTop()" class="btn-top">トップに戻る</button></p>
+
+        <section>
+
+            <h2>問い合わせ</h2>
+            <p>ご覧いただきありがとうございます！</p>
+            <p>宮古島のことで質問などがありましたらお気軽にお問い合わせください！</p>
+
+            
+            <form action="index.html" method="post" onsubmit="return confirmSave()">
+    <div>
+        <label for="lastname">姓：</label>
+        <!-- 💡 value="" を追加 -->
+        <input type="text" id="lastname" name="surname" placeholder="山田" value="">
+        <label>
+            名：
+            <!-- 💡 value="" を追加 -->
+            <input type="text" id="firstname" name="firstname" required value="">
+        </label>
+    </div>
+    <div>
+        <label for="password">パスワード：</label>
+        <input type="password" name="password" id="password">
+    </div>
+    <div>
+        <input type="checkbox" name="agreement" id="agreement" value="on" checked>
+        <label for="agreement">プライバシーポリシーに同意する</label>
+    </div>
+    <div>
+        <!-- 💡 性別のIDとラベルのねじれを修正、最後におまけで「checked」を追加 -->
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">男性</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">女性</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">その他</label>
+        <input type="radio" name="gender" id="none" value="none" checked>
+        <label for="none">回答しない</label>
+    </div>
+    <div>
+        <label for="remarks">問い合わせ内容：</label>
+        <textarea name="remarks" id="remarks" cols="30" rows="10" accesskey="m" tabindex="1">ここにお問い合わせ内容を入力してください</textarea>
+    </div>
+    <div>
+        <label for="email">メールアドレス：</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div>
+        <label for="birthday">誕生日：</label>
+        <input type="date" name="birthday" id="birthday">
+        <input type="time" name="time" id="time">
+    </div>
+    <div>
+        <label for="tel">電話番号：</label>
+        <input type="tel" name="tel" id="tel">
+    </div>
+    <div>
+        <label for="upload-file">アップロードしたいファイル</label>
+        <input type="file" name="upload-file" id="upload-file">
+    </div>
+    <div>
+        <input type="submit" value="送信">
+        <input type="reset" value="リセット">
+    </div>
+</form>
+
+        </section>
+
+        <section>
+            <h2>受信データ</h2>
+            <div>
+                氏名：
+                <span id="display-surname"></span>
+                <span id="display-firstname"></span>
+            </div>
+        </section>
+
+        <p><button onclick="scrollToTop()" class="btn-top">トップに戻る</button></p>
+
+    </main>
+
+    <footer>
+        Copyright &copy; Tsubasa Shimizu, All Rights Reserved.
+    </footer>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
